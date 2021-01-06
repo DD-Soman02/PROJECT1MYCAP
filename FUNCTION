@@ -1,0 +1,11 @@
+l = list(input())
+d = {} 
+def most_frequent():
+    for i in range(0,len(l)):
+        key = l[i]
+        value = l.count(l[i])
+        d[key] = value
+
+    for i in d:
+            print('{} = {}'.format(i,d[i]))
+most_frequent()
